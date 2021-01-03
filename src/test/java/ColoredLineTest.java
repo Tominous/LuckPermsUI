@@ -24,17 +24,17 @@ public class ColoredLineTest extends Application {
     public void lineParser() {
         ColoredLine coloredLine;
         coloredLine = new ColoredLine("&6Maker&cTim &ais &6Awesome!");
-        assertEquals("Amount of colorblocks found", 4, coloredLine.getChildren().size());
+        assertEquals("Amount of colourblocks found", 4, coloredLine.getChildren().size());
         coloredLine = new ColoredLine("Maker&cTim &ais &6Awesome!");
-        assertEquals("Amount of colorblocks found", 4, coloredLine.getChildren().size());
+        assertEquals("Amount of colourblocks found", 4, coloredLine.getChildren().size());
         coloredLine = new ColoredLine("MakerTim is Awesome!");
-        assertEquals("Amount of colorblocks found", 1, coloredLine.getChildren().size());
+        assertEquals("Amount of colourblocks found", 1, coloredLine.getChildren().size());
         coloredLine = new ColoredLine("MakerTim &ais Awesome!");
-        assertEquals("Amount of colorblocks found", 2, coloredLine.getChildren().size());
+        assertEquals("Amount of colourblocks found", 2, coloredLine.getChildren().size());
         coloredLine = new ColoredLine("MakerTim &a&ais Awesome!");
-        assertEquals("Amount of colorblocks found", 3, coloredLine.getChildren().size());
+        assertEquals("Amount of colourblocks found", 3, coloredLine.getChildren().size());
         coloredLine = new ColoredLine("MakerTim is Awesome!&a");
-        assertEquals("Amount of colorblocks found", 2, coloredLine.getChildren().size());
+        assertEquals("Amount of colourblocks found", 2, coloredLine.getChildren().size());
 
     }
 
